@@ -1,0 +1,73 @@
+
+/*Contenedor flexible*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Garamond", sans-serif;
+  }
+
+main{
+  flex: 1;
+}
+
+@mixin d_flex($display, $direccion, $just, $alig, $mt, $gap: 0, $pd: 0) {
+  display: $display;
+  flex-direction: $direccion;
+  justify-content: $just;
+  align-items: $alig;
+  margin-top: $mt;
+  gap: $gap;
+  // min-height: 100vh;
+  padding: $pd;
+
+}
+
+@mixin d_flex_wrap($display, $direccion, $just, $alig, $wrap, $mt) {
+  display: $display;
+  flex-direction: $direccion;
+  justify-content: $just;
+  align-items: $alig;
+  flex-wrap: $wrap;
+  margin-top: $mt;
+}
+@mixin col($size) {
+  width: $size * 100% / 12;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    @include col($i);
+     flex: 0 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+/*Configuracion general de img*/
+@mixin img($ancho, $alto, $cover, $opacidad) {
+  width: $ancho;
+  height: $alto;
+  object-fit: $cover;
+  opacity: $opacidad;
+}
+/*Configuración para aplicar neumorfismo*/
+@mixin neo($bg, $b_radio, $eje) {
+  background-color: $bg;
+  border-radius: $b_radio;
+  box-shadow: inset $eje $eje ($eje * 2) #040404,
+    inset (-$eje) (-$eje) ($eje * 2) #222020;
+}
+
+@mixin cont_neo($bg, $b_radio, $eje, $color1, $color2) {
+  background-color: $bg;
+  border-radius: $b_radio;
+  box-shadow: $eje $eje ($eje * 2) red, (-$eje) (-$eje) ($eje * 2) blue;
+}
+/* From Uiverse.io by adamgiebl */ 
+@mixin cont_neos ($br, $bag, $eje){
+  border-radius: $br;
+  background: $bag;
+  box-shadow: $eje $eje ($eje*2) #bebebe,
+             (-$eje) (-$eje) ($eje * 2) #ffffff;
+ 
+}
