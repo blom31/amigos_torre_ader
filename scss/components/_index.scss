@@ -106,6 +106,9 @@ nav {
     height: 50vh;
     width: 100vw;
   }
+  .btn_menu{
+    width: 55px;
+  }
   .resumen {
     margin-top: 1em;
   }
@@ -127,6 +130,8 @@ nav {
   }
   .historia_texto {
     padding:0.5em;
+    height: 300px;
+    overflow-y: scroll;
   }
   .historia_img{
     padding: 1em;
