@@ -68,3 +68,4 @@ function placeDetailsCallback(place, status) {
     container.innerHTML = `<p>Error al cargar las reseñas: ${status}</p>`;
   }
 }
+

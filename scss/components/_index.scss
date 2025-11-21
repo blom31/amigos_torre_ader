@@ -49,10 +49,9 @@ nav {
   @include utils.d_flex(flex, column, center, center, 1.2em, 0em, 0em);
   width: 100%;
   margin-bottom: 1em;
-  
 }
-.historia_container{
-   @include utils.d_flex(flex, column, center, center, 1em, 0em, 0em);
+.historia_container {
+  @include utils.d_flex(flex, column, center, center, 1em, 0em, 0em);
 }
 .historia_titulo {
   font-size: 2.5em;
@@ -60,35 +59,35 @@ nav {
   font-weight: 700;
   letter-spacing: 20px;
 }
-.historia{
+.historia {
   @include utils.d_flex(flex, row, center, center, 0.5em, 0em, 0em);
   background: rgba(0, 0, 0, 0.047);
   border-radius: 15px;
   width: 95%;
   margin-bottom: 1em;
 }
-.historia_texto  {
+.historia_texto {
   font-size: 1.5em;
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
-.historia_img{
+.historia_img {
   padding: 4em;
 }
-.historia_img img{
-  width: 100%;}
-  
+.historia_img img {
+  width: 100%;
+}
+
 .reviews-container {
   @include utils.d_flex(flex, column, center, center, wrap, 0);
   width: 100%;
   background-color: rgba(230, 220, 220, 0.322);
 }
-.reviews{
-    @include utils.d_flex(flex, row, space-evenly, center, wrap, 0);
+.reviews {
+  @include utils.d_flex(flex, row, space-evenly, center, wrap, 0);
 }
-.more-reviews{
+.more-reviews {
   background-color: rgb(173, 148, 137);
-
 }
 .review-card {
   width: 250px;
@@ -102,11 +101,14 @@ nav {
   border-radius: 15px;
 }
 @media (max-width: 425px) {
+  body {
+    font-family: "Garamond", sans-serif;
+  }
   .fondo {
     height: 50vh;
     width: 100vw;
   }
-  .btn_menu{
+  .btn_menu {
     width: 55px;
   }
   .resumen {
@@ -120,20 +122,21 @@ nav {
   .intro {
     display: none;
   }
-  .historia{
+  .historia {
     flex-direction: column;
-    padding: 0 ;
-    margin: 0;;
+    padding: 0;
+    margin: 0;
   }
   .historia_titulo {
     font-size: 1.5em;
   }
   .historia_texto {
-    padding:0.5em;
+    padding: 0.5em;
     height: 300px;
+    font-size: 1em;
     overflow-y: scroll;
   }
-  .historia_img{
+  .historia_img {
     padding: 1em;
   }
   .contenedor {
@@ -145,7 +148,8 @@ nav {
   .col-3,
   .col-4,
   .col-5,
-  .col-6, .col-8 {
+  .col-6,
+  .col-8 {
     width: 100%;
   }
 }

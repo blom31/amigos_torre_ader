@@ -267,6 +267,9 @@ nav {
 }
 
 @media (max-width: 425px) {
+  body {
+    font-family: "Garamond", sans-serif;
+  }
   .fondo {
     height: 50vh;
     width: 100vw;
@@ -296,6 +299,7 @@ nav {
   .historia_texto {
     padding: 0.5em;
     height: 300px;
+    font-size: 1em;
     overflow-y: scroll;
   }
   .historia_img {
@@ -310,7 +314,8 @@ nav {
   .col-3,
   .col-4,
   .col-5,
-  .col-6, .col-8 {
+  .col-6,
+  .col-8 {
     width: 100%;
   }
 }
