@@ -240,7 +240,7 @@ nav {
     font-size: 1.5em;
   }
   .foto_titulo{
-    letter-spacing: 7px;
+    letter-spacing: 5px;
   }
   .historia_texto {
     padding: 0.5em;
@@ -258,12 +258,22 @@ nav {
   .historia_titulo{
     letter-spacing: 10px;
   }
+  // .contenedor_fotos{
+  //   width: 0%;
+  // }
+  // .reviews-container{
+  //   width: 70%;
+  //   background-color: aqua;
+  // }
   .reviews, .more-reviews {
     display: none;
   }
   .review_google{
     display: block;
     margin-bottom: 1em;
+  }
+  .oculto{
+    display: none;
   }
   .col-1,
   .col-2,
