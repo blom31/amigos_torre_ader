@@ -193,7 +193,8 @@ nav {
   padding: 0em;
 }
 
-.historia_titulo, .foto_titulo {
+.historia_titulo,
+.foto_titulo {
   font-size: 2.5em;
   font-style: italic;
   font-weight: 700;
@@ -208,10 +209,10 @@ nav {
   margin-top: 0.5em;
   gap: 0em;
   padding: 0em;
-  background: rgba(0, 0, 0, 0.047);
   border-radius: 15px;
   width: 95%;
   margin-bottom: 1em;
+  background-color: rgba(237, 203, 82, 0.286);
 }
 
 .historia_texto {
@@ -237,6 +238,7 @@ nav {
   gap: 0;
   padding: 0;
   width: 95%;
+  margin-bottom: 1em;
 }
 
 .Carousel {
@@ -354,8 +356,6 @@ nav {
   gap: 0;
   padding: 0;
   width: 95%;
-  border-radius: 15px;
-  background-color: rgba(230, 220, 220, 0.322);
 }
 
 .reviews {
@@ -366,11 +366,30 @@ nav {
   margin-top: 0;
   gap: 0;
   padding: 0;
+  border-radius: 15px;
+  background-color: rgba(237, 203, 82, 0.173);
+  height: 300px;
+  width: 100%;
 }
 
 .more-reviews a {
   font-size: 1.4em;
-  color: rgb(33, 26, 132);
+}
+
+.button_neo {
+  color: #090909;
+  padding: 0.5em 0.5em;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.button_neo:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 
 .review_google {
@@ -378,9 +397,9 @@ nav {
 }
 
 .review-card {
-  width: 240px;
+  width: 230px;
   height: 250px;
-  margin: 0.5em;
+  margin: 0.3em;
   overflow-y: scroll;
   padding: 0.5em;
   border-color: rgb(81, 83, 83);
@@ -400,6 +419,9 @@ nav {
 }
 
 @media (max-width: 425px) {
+  li a {
+    font-size: 0.7em;
+  }
   .fondo {
     height: 50vh;
     width: 100vw;
@@ -423,7 +445,8 @@ nav {
     padding: 0;
     margin: 0;
   }
-  .historia_titulo, .foto_titulo {
+  .historia_titulo,
+  .foto_titulo {
     font-size: 1.5em;
   }
   .foto_titulo {
@@ -445,7 +468,8 @@ nav {
   .historia_titulo {
     letter-spacing: 10px;
   }
-  .reviews, .more-reviews {
+  .reviews,
+  .more-reviews {
     display: none;
   }
   .review_google {
