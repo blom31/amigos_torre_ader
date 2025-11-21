@@ -193,7 +193,7 @@ nav {
   padding: 0em;
 }
 
-.historia_titulo {
+.historia_titulo, .foto_titulo {
   font-size: 2.5em;
   font-style: italic;
   font-weight: 700;
@@ -354,6 +354,7 @@ nav {
   gap: 0;
   padding: 0;
   width: 95%;
+  border-radius: 15px;
   background-color: rgba(230, 220, 220, 0.322);
 }
 
@@ -367,20 +368,35 @@ nav {
   padding: 0;
 }
 
-.more-reviews {
-  background-color: rgb(173, 148, 137);
+.more-reviews a {
+  font-size: 1.4em;
+  color: rgb(33, 26, 132);
+}
+
+.review_google {
+  display: none;
 }
 
 .review-card {
-  width: 250px;
+  width: 240px;
   height: 250px;
   margin: 0.5em;
   overflow-y: scroll;
   padding: 0.5em;
-  border-color: darkslategrey;
+  border-color: rgb(81, 83, 83);
   border-style: solid;
   border-width: 1px;
   border-radius: 15px;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2em;
+  gap: 0;
+  padding: 0;
 }
 
 @media (max-width: 425px) {
@@ -407,8 +423,11 @@ nav {
     padding: 0;
     margin: 0;
   }
-  .historia_titulo {
+  .historia_titulo, .foto_titulo {
     font-size: 1.5em;
+  }
+  .foto_titulo {
+    letter-spacing: 7px;
   }
   .historia_texto {
     padding: 0.5em;
@@ -422,6 +441,16 @@ nav {
   .contenedor {
     flex-direction: column;
     margin: 0;
+  }
+  .historia_titulo {
+    letter-spacing: 10px;
+  }
+  .reviews, .more-reviews {
+    display: none;
+  }
+  .review_google {
+    display: block;
+    margin-bottom: 1em;
   }
   .col-1,
   .col-2,
