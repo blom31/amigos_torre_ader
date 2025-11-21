@@ -53,7 +53,8 @@ nav {
 .historia_container {
   @include utils.d_flex(flex, column, center, center, 1em, 0em, 0em);
 }
-.historia_titulo , .foto_titulo {
+.historia_titulo,
+.foto_titulo {
   font-size: 2.5em;
   font-style: italic;
   font-weight: 700;
@@ -61,10 +62,10 @@ nav {
 }
 .historia {
   @include utils.d_flex(flex, row, center, center, 0.5em, 0em, 0em);
-  background: rgba(0, 0, 0, 0.047);
   border-radius: 15px;
   width: 95%;
   margin-bottom: 1em;
+  background-color: rgba(237, 203, 82, 0.286);
 }
 .historia_texto {
   font-size: 1.5em;
@@ -80,8 +81,9 @@ nav {
 .contenedor_fotos {
   @include utils.d_flex(flex, column, center, center, 1em);
   width: 95%;
-}
+    margin-bottom: 1em;
 
+}
 
 .Carousel {
   width: 100%;
@@ -183,23 +185,42 @@ nav {
 .reviews-container {
   @include utils.d_flex(flex, column, center, center, 1em);
   width: 95%;
-  border-radius: 15px;
-  background-color: rgba(230, 220, 220, 0.322);
 }
 .reviews {
   @include utils.d_flex(flex, row, space-evenly, center, 0);
+  border-radius: 15px;
+  background-color: rgba(237, 203, 82, 0.173);
+  height: 300px;
+    width: 100%;
+
 }
+
 .more-reviews a {
   font-size: 1.4em;
-  color: rgb(33, 26, 132);
 }
-.review_google{
+.button_neo {
+  color: #090909;
+  padding: 0.5em 0.5em;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.button_neo:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.review_google {
   display: none;
 }
 .review-card {
-  width: 240px;
+  width: 230px;
   height: 250px;
-  margin: 0.5em;
+  margin: 0.3em;
   overflow-y: scroll;
   padding: 0.5em;
   border-color: rgb(81, 83, 83);
@@ -208,11 +229,13 @@ nav {
   border-radius: 15px;
 }
 
-
-.redes{
-    @include utils.d_flex(flex, row, space-evenly, center, 2em);
+.redes {
+  @include utils.d_flex(flex, row, space-evenly, center, 2em);
 }
 @media (max-width: 425px) {
+  li a{
+    font-size: 0.7em;
+  }
   .fondo {
     height: 50vh;
     width: 100vw;
@@ -236,10 +259,11 @@ nav {
     padding: 0;
     margin: 0;
   }
-  .historia_titulo, .foto_titulo {
+  .historia_titulo,
+  .foto_titulo {
     font-size: 1.5em;
   }
-  .foto_titulo{
+  .foto_titulo {
     letter-spacing: 5px;
   }
   .historia_texto {
@@ -255,7 +279,7 @@ nav {
     flex-direction: column;
     margin: 0;
   }
-  .historia_titulo{
+  .historia_titulo {
     letter-spacing: 10px;
   }
   // .contenedor_fotos{
@@ -265,14 +289,15 @@ nav {
   //   width: 70%;
   //   background-color: aqua;
   // }
-  .reviews, .more-reviews {
+  .reviews,
+  .more-reviews {
     display: none;
   }
-  .review_google{
+  .review_google {
     display: block;
     margin-bottom: 1em;
   }
-  .oculto{
+  .oculto {
     display: none;
   }
   .col-1,
