@@ -268,7 +268,7 @@ nav {
 
 @media (max-width: 425px) {
   body {
-    font-family: "Garamond", sans-serif;
+    font-family: "Times New Roman", Times, serif;
   }
   .fondo {
     height: 50vh;
@@ -281,8 +281,8 @@ nav {
     margin-top: 1em;
   }
   .title {
-    padding-left: 1em;
-    padding-top: 8em;
+    padding-left: 5em;
+    padding-top: 10em;
     font-size: 0.5em;
   }
   .intro {
