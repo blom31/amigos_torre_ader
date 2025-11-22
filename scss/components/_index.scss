@@ -52,8 +52,7 @@
 .contenedor_fotos {
   @include utils.d_flex(flex, column, center, center, 1em);
   width: 95%;
-    margin-bottom: 1em;
-
+  margin-bottom: 1em;
 }
 
 .Carousel {
@@ -162,8 +161,7 @@
   border-radius: 15px;
   background-color: rgba(237, 203, 82, 0.173);
   height: 300px;
-    width: 100%;
-
+  width: 100%;
 }
 
 .more-reviews a {
@@ -204,22 +202,6 @@
   @include utils.d_flex(flex, row, space-evenly, center, 2em);
 }
 @media (max-width: 768px) {
-   nav {
-    font-size: 0.8em;
-  }
- 
-  .resumen {
-    margin-top: 5em;
-  }
-  .title {
-    padding-left: 4em;
-    padding-top: 10em;
-    font-size: 0.8em;
-  }
-  .intro {
-    max-width: 300px;
-    font-size: 1em;
-  }
   .historia {
     flex-direction: column;
     padding: 0;
@@ -244,27 +226,6 @@
   }
 }
 @media (max-width: 425px) {
-  li a{
-    font-size: 0.7em;
-  }
-  .fondo {
-    height: 50vh;
-    width: 100vw;
-  }
-  .btn_menu {
-    width: 55px;
-  }
-  .resumen {
-    margin-top: 1em;
-  }
-  .title {
-    padding-left: 4em;
-    padding-top: 13em;
-    font-size: 0.5em;
-  }
-  .intro {
-    display: none;
-  }
   .historia {
     flex-direction: column;
     padding: 0;
@@ -293,7 +254,7 @@
   .historia_titulo {
     letter-spacing: 10px;
   }
-  
+
   .reviews,
   .more-reviews {
     display: none;

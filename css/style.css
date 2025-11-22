@@ -120,6 +120,9 @@ h2 {
   h2 {
     font-size: 1.5em;
   }
+  li a {
+    font-size: 0.7em;
+  }
 }
 .fondo {
   background-image: linear-gradient(to right, rgba(12, 12, 12, 0.901), rgba(8, 8, 8, 0.077)), url(https://res.cloudinary.com/dufyko66u/image/upload/c_fill,ar_16:9,g_auto/v1763586056/horizontal_adt4r1.jpg);
@@ -380,21 +383,6 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  nav {
-    font-size: 0.8em;
-  }
-  .resumen {
-    margin-top: 5em;
-  }
-  .title {
-    padding-left: 4em;
-    padding-top: 10em;
-    font-size: 0.8em;
-  }
-  .intro {
-    max-width: 300px;
-    font-size: 1em;
-  }
   .historia {
     flex-direction: column;
     padding: 0;
@@ -419,27 +407,6 @@ h2 {
   }
 }
 @media (max-width: 425px) {
-  li a {
-    font-size: 0.7em;
-  }
-  .fondo {
-    height: 50vh;
-    width: 100vw;
-  }
-  .btn_menu {
-    width: 55px;
-  }
-  .resumen {
-    margin-top: 1em;
-  }
-  .title {
-    padding-left: 4em;
-    padding-top: 13em;
-    font-size: 0.5em;
-  }
-  .intro {
-    display: none;
-  }
   .historia {
     flex-direction: column;
     padding: 0;
@@ -524,11 +491,27 @@ nav {
 }
 
 @media (max-width: 768px) {
-  .lista {
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    gap: 1em;
+  .resumen {
+    margin-top: 10em;
+    padding-left: 1.3em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  .intro {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .fondo {
+    height: 50vh;
+    width: 100vw;
+  }
+  li a {
+    font-size: 0.7em;
+  }
+  .resumen {
+    display: none;
   }
 }
 

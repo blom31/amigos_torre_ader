@@ -26,14 +26,28 @@ nav {
   margin-top: 10em;
   max-width: 400px;
 }
-.ficha li {
-}
 
 @media (max-width: 768px) {
-   .lista {
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    gap: 1em;
+  .resumen {
+    margin-top: 10em;
+    padding-left: 1.3em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  .intro {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .fondo {
+    height: 50vh;
+    width: 100vw;
+  }
+  li a {
+    font-size: 0.7em;
+  }
+  .resumen {
+    display: none;
   }
 }

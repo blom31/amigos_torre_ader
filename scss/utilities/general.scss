@@ -1,24 +1,27 @@
 @use "./variables" as v;
 
-
 a {
   text-decoration: none;
 }
 li {
   list-style: none;
 }
-h1{
+h1 {
   font-size: 3em;
 }
-h2{
+h2 {
   font-size: 1.7em;
 }
 
 @media (max-width: 425px) {
-  h1{
+  h1 {
     font-size: 3em;
   }
-  h2{
+  h2 {
     font-size: 1.5em;
+  }
+
+  li a {
+    font-size: 0.7em;
   }
 }

@@ -21,6 +21,9 @@ h2 {
   h2 {
     font-size: 1.5em;
   }
+  li a {
+    font-size: 0.7em;
+  }
 }
 
 /*# sourceMappingURL=general.css.map */
