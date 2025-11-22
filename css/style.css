@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Garamond", sans-serif, "merriweather", serif;
 }
 
 main {
@@ -107,11 +106,11 @@ li {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 1.7em;
 }
 
 @media (max-width: 425px) {
@@ -131,44 +130,6 @@ h2 {
   background-repeat: no-repeat;
   /* Evita que la imagen se repita */
   height: 100vh;
-}
-
-.icon img {
-  width: 40px;
-}
-
-nav {
-  font-size: 1.7em;
-}
-
-.lista {
-  width: 95%;
-  justify-content: space-between;
-}
-
-.enlaces {
-  color: rgb(255, 255, 255);
-}
-
-.resumen {
-  margin-top: 12em;
-}
-
-.title {
-  align-items: center;
-  position: relative;
-  padding-left: 7.5em;
-  padding-top: 1em;
-  color: white;
-}
-
-.intro {
-  margin-top: 1em;
-  max-width: 400px;
-}
-
-.ficha li {
-  font-size: 1.2em;
 }
 
 .contenedor {
@@ -418,6 +379,45 @@ nav {
   padding: 0;
 }
 
+@media (max-width: 768px) {
+  nav {
+    font-size: 0.8em;
+  }
+  .resumen {
+    margin-top: 5em;
+  }
+  .title {
+    padding-left: 4em;
+    padding-top: 10em;
+    font-size: 0.8em;
+  }
+  .intro {
+    max-width: 300px;
+    font-size: 1em;
+  }
+  .historia {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .historia_titulo,
+  .foto_titulo {
+    font-size: 2em;
+  }
+  .historia_texto {
+    padding: 0.5em;
+    height: 300px;
+    font-size: 1.2em;
+    overflow-y: scroll;
+  }
+  .historia_img {
+    padding: 1em;
+  }
+  .contenedor {
+    flex-direction: column;
+    margin: 0;
+  }
+}
 @media (max-width: 425px) {
   li a {
     font-size: 0.7em;
@@ -487,6 +487,48 @@ nav {
   .col-6,
   .col-8 {
     width: 100%;
+  }
+}
+nav {
+  font-size: 1.3em;
+}
+
+.icon img {
+  width: 40px;
+}
+
+.lista {
+  width: 95%;
+  justify-content: space-between;
+}
+
+.enlaces {
+  color: rgb(255, 255, 255);
+}
+
+.resumen {
+  margin-top: 6em;
+  padding-left: 4em;
+}
+
+.title {
+  align-items: center;
+  position: relative;
+  padding-top: 1em;
+  color: rgb(255, 255, 255);
+}
+
+.intro {
+  margin-top: 10em;
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .lista {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
   }
 }
 
