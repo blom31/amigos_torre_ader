@@ -1,5 +1,9 @@
-nav {
-  font-size: 1.3em;
+@use "../utilities/utilities" as utils;
+
+.nav {
+  width: 100%;
+@include utils.blur(#1f1e1e18, blur(2px));
+ 
 }
 .icon img {
   width: 40px;
@@ -15,11 +19,13 @@ nav {
 .resumen {
   margin-top: 6em;
   padding-left: 4em;
+  
+
 }
 .title {
   align-items: center;
   position: relative;
-  padding-top: 1em;
+  padding: 1.5em;
   color: rgb(255, 255, 255);
 }
 .intro {
@@ -28,8 +34,12 @@ nav {
 }
 
 @media (max-width: 768px) {
+  .menu {
+    position: fixed;
+    margin-top: 16em;
+  }
   .resumen {
-    margin-top: 10em;
+    margin-top: 17em;
     padding-left: 1.3em;
   }
   h2 {
@@ -43,6 +53,9 @@ nav {
   .fondo {
     height: 50vh;
     width: 100vw;
+  }
+  .menu {
+    margin-top: 11.5em;
   }
   li a {
     font-size: 0.7em;

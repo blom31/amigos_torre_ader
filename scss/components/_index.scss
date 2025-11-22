@@ -8,12 +8,9 @@
     ),
     url(https://res.cloudinary.com/dufyko66u/image/upload/c_fill,ar_16:9,g_auto/v1763586056/horizontal_adt4r1.jpg);
   background-size: cover;
-  /* Ajusta la imagen para cubrir toda la pantalla */
   background-position: center;
-  /* Centra la imagen */
   background-repeat: no-repeat;
-  /* Evita que la imagen se repita */
-  height: 100vh;
+  height:100vh;
 }
 
 .contenedor {

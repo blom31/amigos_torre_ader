@@ -105,6 +105,10 @@ li {
   list-style: none;
 }
 
+nav {
+  font-size: 1.3em;
+}
+
 h1 {
   font-size: 3em;
 }
@@ -124,14 +128,78 @@ h2 {
     font-size: 0.7em;
   }
 }
+.nav {
+  width: 100%;
+  background-color: rgba(31, 30, 30, 0.0941176471);
+  backdrop-filter: blur(2px);
+}
+
+.icon img {
+  width: 40px;
+}
+
+.lista {
+  width: 95%;
+  justify-content: space-between;
+}
+
+.enlaces {
+  color: rgb(255, 255, 255);
+}
+
+.resumen {
+  margin-top: 6em;
+  padding-left: 4em;
+}
+
+.title {
+  align-items: center;
+  position: relative;
+  padding: 1.5em;
+  color: rgb(255, 255, 255);
+}
+
+.intro {
+  margin-top: 10em;
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    position: fixed;
+    margin-top: 16em;
+  }
+  .resumen {
+    margin-top: 17em;
+    padding-left: 1.3em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  .intro {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .fondo {
+    height: 50vh;
+    width: 100vw;
+  }
+  .menu {
+    margin-top: 11.5em;
+  }
+  li a {
+    font-size: 0.7em;
+  }
+  .resumen {
+    display: none;
+  }
+}
 .fondo {
   background-image: linear-gradient(to right, rgba(12, 12, 12, 0.901), rgba(8, 8, 8, 0.077)), url(https://res.cloudinary.com/dufyko66u/image/upload/c_fill,ar_16:9,g_auto/v1763586056/horizontal_adt4r1.jpg);
   background-size: cover;
-  /* Ajusta la imagen para cubrir toda la pantalla */
   background-position: center;
-  /* Centra la imagen */
   background-repeat: no-repeat;
-  /* Evita que la imagen se repita */
   height: 100vh;
 }
 
@@ -454,64 +522,6 @@ h2 {
   .col-6,
   .col-8 {
     width: 100%;
-  }
-}
-nav {
-  font-size: 1.3em;
-}
-
-.icon img {
-  width: 40px;
-}
-
-.lista {
-  width: 95%;
-  justify-content: space-between;
-}
-
-.enlaces {
-  color: rgb(255, 255, 255);
-}
-
-.resumen {
-  margin-top: 6em;
-  padding-left: 4em;
-}
-
-.title {
-  align-items: center;
-  position: relative;
-  padding-top: 1em;
-  color: rgb(255, 255, 255);
-}
-
-.intro {
-  margin-top: 10em;
-  max-width: 400px;
-}
-
-@media (max-width: 768px) {
-  .resumen {
-    margin-top: 10em;
-    padding-left: 1.3em;
-  }
-  h2 {
-    font-size: 1.5em;
-  }
-  .intro {
-    display: none;
-  }
-}
-@media (max-width: 425px) {
-  .fondo {
-    height: 50vh;
-    width: 100vw;
-  }
-  li a {
-    font-size: 0.7em;
-  }
-  .resumen {
-    display: none;
   }
 }
 

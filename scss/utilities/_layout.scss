@@ -70,3 +70,8 @@ main{
              (-$eje) (-$eje) ($eje * 2) #ffffff;
  
 }
+
+@mixin blur($bg, $blur){
+  background-color: $bg;
+  backdrop-filter: $blur;
+}
