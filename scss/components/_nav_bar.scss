@@ -1,0 +1,39 @@
+nav {
+  font-size: 1.3em;
+}
+.icon img {
+  width: 40px;
+}
+.lista {
+  width: 95%;
+  justify-content: space-between;
+}
+.enlaces {
+  color: rgb(255, 255, 255);
+}
+
+.resumen {
+  margin-top: 6em;
+  padding-left: 4em;
+}
+.title {
+  align-items: center;
+  position: relative;
+  padding-top: 1em;
+  color: rgb(255, 255, 255);
+}
+.intro {
+  margin-top: 10em;
+  max-width: 400px;
+}
+.ficha li {
+}
+
+@media (max-width: 768px) {
+   .lista {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+  }
+}
