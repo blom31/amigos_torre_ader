@@ -17,6 +17,11 @@
   @include utils.d_flex(flex, column, center, center, 1.2em, 0em, 0em);
   width: 100%;
   margin-bottom: 1em;
+}.foto_titulo {
+  font-size: 1.8em;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 20px;
 }
 
 .contenedor_fotos {
@@ -185,6 +190,7 @@
 
   .foto_titulo {
     font-size: 1.5em;
+    letter-spacing: 6px;
   }
   .reviews,
   .more-reviews {

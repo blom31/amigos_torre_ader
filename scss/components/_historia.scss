@@ -3,8 +3,7 @@
 .historia_container {
   @include utils.d_flex(flex, column, center, center, 1em, 0em, 0em);
 }
-.historia_titulo,
-.foto_titulo {
+.historia_titulo {
   font-size: 1.8em;
   font-style: italic;
   font-weight: 700;
@@ -16,6 +15,9 @@
   width: 90%;
   margin-bottom: 1em;
   background-color: rgba(222, 201, 66, 0.5);
+}
+.histo_flex {
+  align-items: center;
 }
 .historia_texto {
   font-size: 1em;
@@ -31,15 +33,22 @@
   padding-right: 2.5em;
   padding-top: 1em;
   padding-bottom: 1em;
+  width: fit-content;
+  height: 320px;
 }
 .historia_img img {
   width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
 }
 .btn_histo {
   background-color: rgba(222, 201, 66, 0.849);
-  border-radius: 90px;
   width: 25px;
+  height: 50px;
   margin: 1.5em;
+  opacity: 1;
+  margin-top: 10%;
 }
 @media (max-width: 768px) {
   .historia {
@@ -47,8 +56,7 @@
     padding: 0;
     margin: 0;
   }
-  .historia_titulo,
-  .foto_titulo {
+  .historia_titulo {
     font-size: 2em;
   }
 
@@ -62,6 +70,9 @@
   }
   .historia_img {
     width: 35%;
+  }
+  .btn_histo {
+    margin-top: 17%;
   }
   .contenedor {
     flex-direction: column;
@@ -79,14 +90,16 @@
   }
   .historia_titulo {
     font-size: 1.5em;
+    letter-spacing: 10px;
   }
-  .foto_titulo {
-    letter-spacing: 5px;
-  }
+  // .foto_titulo {
+  //   letter-spacing: 5px;
+  // }
   .historia_texto {
     padding: 0.5em;
     width: initial;
   }
+
   .historia_img {
     padding: 1em;
     width: initial;
@@ -95,10 +108,12 @@
     flex-direction: column;
     margin: 0;
   }
-  .historia_titulo {
-    letter-spacing: 10px;
+  .btn_histo {
+    margin-top: 100%;
   }
-  .btn_histo{
-    background-color: initial;
+}
+@media (max-width: 320px) {
+  .btn_histo {
+    margin-top: 135%;
   }
 }
