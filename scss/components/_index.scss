@@ -10,7 +10,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height:100vh;
+  height: 100vh;
 }
 
 .contenedor {
@@ -18,34 +18,7 @@
   width: 100%;
   margin-bottom: 1em;
 }
-.historia_container {
-  @include utils.d_flex(flex, column, center, center, 1em, 0em, 0em);
-}
-.historia_titulo,
-.foto_titulo {
-  font-size: 2.5em;
-  font-style: italic;
-  font-weight: 700;
-  letter-spacing: 20px;
-}
-.historia {
-  @include utils.d_flex(flex, row, center, center, 0.5em, 0em, 0em);
-  border-radius: 15px;
-  width: 95%;
-  margin-bottom: 1em;
-  background-color: rgba(237, 203, 82, 0.286);
-}
-.historia_texto {
-  font-size: 1.5em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-}
-.historia_img {
-  padding: 4em;
-}
-.historia_img img {
-  width: 100%;
-}
+
 .contenedor_fotos {
   @include utils.d_flex(flex, column, center, center, 1em);
   width: 95%;
@@ -199,59 +172,20 @@
   @include utils.d_flex(flex, row, space-evenly, center, 2em);
 }
 @media (max-width: 768px) {
-  .historia {
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-  }
-  .historia_titulo,
   .foto_titulo {
     font-size: 2em;
   }
-  .historia_texto {
-    padding: 0.5em;
-    height: 300px;
-    font-size: 1.2em;
-    overflow-y: scroll;
-  }
-  .historia_img {
-    padding: 1em;
-  }
-  .contenedor {
-    flex-direction: column;
-    margin: 0;
-  }
 }
+
 @media (max-width: 425px) {
-  .historia {
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
+  .fondo {
+    height: 50vh;
+    width: 100vw;
   }
-  .historia_titulo,
+
   .foto_titulo {
     font-size: 1.5em;
   }
-  .foto_titulo {
-    letter-spacing: 5px;
-  }
-  .historia_texto {
-    padding: 0.5em;
-    height: 300px;
-    font-size: 1em;
-    overflow-y: scroll;
-  }
-  .historia_img {
-    padding: 1em;
-  }
-  .contenedor {
-    flex-direction: column;
-    margin: 0;
-  }
-  .historia_titulo {
-    letter-spacing: 10px;
-  }
-
   .reviews,
   .more-reviews {
     display: none;
@@ -269,7 +203,9 @@
   .col-4,
   .col-5,
   .col-6,
-  .col-8 {
+  .col-7,
+  .col-8,
+  .col-9 {
     width: 100%;
   }
 }

@@ -1,0 +1,104 @@
+@use "../utilities/utilities" as utils;
+
+.historia_container {
+  @include utils.d_flex(flex, column, center, center, 1em, 0em, 0em);
+}
+.historia_titulo,
+.foto_titulo {
+  font-size: 1.8em;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 20px;
+}
+.historia {
+  @include utils.d_flex(flex, row, center, center, 0.5em, 0em, 0em);
+  border-radius: 15px;
+  width: 90%;
+  margin-bottom: 1em;
+  background-color: rgba(222, 201, 66, 0.5);
+}
+.historia_texto {
+  font-size: 1em;
+  padding-left: 2.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: justify;
+}
+.historia_subtitulo {
+  font-weight: 500;
+}
+.historia_img {
+  padding-right: 2.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.historia_img img {
+  width: 100%;
+}
+.btn_histo {
+  background-color: rgba(222, 201, 66, 0.849);
+  border-radius: 90px;
+  width: 25px;
+  margin: 1.5em;
+}
+@media (max-width: 768px) {
+  .historia {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .historia_titulo,
+  .foto_titulo {
+    font-size: 2em;
+  }
+
+  .historia_texto {
+    width: 49%;
+    padding: 0.5em;
+    height: 300px;
+    font-size: 1em;
+    padding-left: 1em;
+    overflow-y: scroll;
+  }
+  .historia_img {
+    width: 35%;
+  }
+  .contenedor {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+@media (max-width: 425px) {
+  .historia {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .histo_flex {
+    flex-direction: column;
+  }
+  .historia_titulo {
+    font-size: 1.5em;
+  }
+  .foto_titulo {
+    letter-spacing: 5px;
+  }
+  .historia_texto {
+    padding: 0.5em;
+    width: initial;
+  }
+  .historia_img {
+    padding: 1em;
+    width: initial;
+  }
+  .contenedor {
+    flex-direction: column;
+    margin: 0;
+  }
+  .historia_titulo {
+    letter-spacing: 10px;
+  }
+  .btn_histo{
+    background-color: initial;
+  }
+}
