@@ -1,0 +1,11 @@
+@use "../utilities/utilities" as utils;
+
+.eventos_container {
+  @include utils.d_flex(flex, column, center, center, 1em, 0em, 0em);
+}
+.eventos_titulo {
+  font-size: 1.8em;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 20px;
+}
