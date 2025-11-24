@@ -47,7 +47,7 @@ function placeDetailsCallback(place, status) {
 
       // Usamos el campo 'url' -> dejamos el enlace en un contenedor separado
       const moreHtml = `
-        <a href="${place.url}" target="_blank">Ver más reseñas en Google Maps</a>
+        <a  class="reviews_link" href="${place.url}" target="_blank">Ver más reseñas en Google Maps</a>
       `;
 
       // Insertamos las reseñas en el contenedor principal

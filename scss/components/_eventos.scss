@@ -9,3 +9,20 @@
   font-weight: 700;
   letter-spacing: 20px;
 }
+.eventos {
+  @include utils.d_flex(flex, row, center, center, 1em, 0em, 0em);
+  border-radius: 15px;
+  width: 90%;
+  margin-bottom: 1em;
+  background-color: #d29f6c51;
+}
+.evento {
+  background-color: #d29f6c51;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 15px;
+}
+.link_evento a{
+  color: rgb(21, 79, 46);
+  font-weight: 500;
+}
