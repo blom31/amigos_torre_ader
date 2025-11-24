@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/*Contenedor flexible*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  flex: 1;
+}
+
+.col-1 {
+  width: 8.3333333333%;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.col-3 {
+  width: 25%;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.col-6 {
+  width: 50%;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.col-9 {
+  width: 75%;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.col-12 {
+  width: 100%;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/*Configuracion general de img*/
+/*Configuración para aplicar neumorfismo*/
+/* From Uiverse.io by adamgiebl */
+body {
+  background-color: rgba(214, 166, 118, 0.5490196078);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  font-size: 1.3em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  li a {
+    font-size: 0.7em;
+  }
+}
+
+/*# sourceMappingURL=utilities.css.map */

@@ -97,6 +97,10 @@ main {
 /*Configuracion general de img*/
 /*Configuración para aplicar neumorfismo*/
 /* From Uiverse.io by adamgiebl */
+body {
+  background-color: rgba(214, 166, 118, 0.5490196078);
+}
+
 a {
   text-decoration: none;
 }
@@ -165,18 +169,16 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .nav {
+    width: 100%;
+    background-color: rgba(31, 30, 30, 0.0941176471);
+    backdrop-filter: blur(0px);
+  }
   .menu {
     position: fixed;
     margin-top: 16em;
   }
   .resumen {
-    margin-top: 17em;
-    padding-left: 1.3em;
-  }
-  h2 {
-    font-size: 1.5em;
-  }
-  .intro {
     display: none;
   }
 }
@@ -190,9 +192,6 @@ h2 {
   }
   li a {
     font-size: 0.7em;
-  }
-  .resumen {
-    display: none;
   }
 }
 .fondo {
@@ -476,7 +475,7 @@ h2 {
   border-radius: 15px;
   width: 90%;
   margin-bottom: 1em;
-  background-color: rgba(222, 201, 66, 0.5);
+  background-color: rgba(210, 159, 108, 0.4823529412);
 }
 
 .histo_flex {
@@ -511,12 +510,12 @@ h2 {
 }
 
 .btn_histo {
-  background-color: rgba(222, 201, 66, 0.849);
+  background-color: rgba(161, 117, 72, 0.4823529412);
   width: 25px;
   height: 50px;
-  margin: 1.5em;
   opacity: 1;
   margin-top: 10%;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
@@ -547,7 +546,7 @@ h2 {
     margin: 0;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 503px) {
   .historia {
     flex-direction: column;
     padding: 0;
@@ -576,7 +575,7 @@ h2 {
     margin-top: 100%;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .btn_histo {
     margin-top: 135%;
   }

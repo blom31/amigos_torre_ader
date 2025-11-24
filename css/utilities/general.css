@@ -1,20 +1,23 @@
-@use "./variables" as v;
-body{
-background-color: #d6a6768c;
+body {
+  background-color: rgba(214, 166, 118, 0.5490196078);
 }
+
 a {
   text-decoration: none;
 }
+
 li {
   list-style: none;
 }
+
 nav {
   font-size: 1.3em;
-  
 }
+
 h1 {
   font-size: 3em;
 }
+
 h2 {
   font-size: 1.7em;
 }
@@ -26,8 +29,9 @@ h2 {
   h2 {
     font-size: 1.5em;
   }
-
   li a {
     font-size: 0.7em;
   }
 }
+
+/*# sourceMappingURL=general.css.map */

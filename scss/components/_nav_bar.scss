@@ -3,7 +3,6 @@
 .nav {
   width: 100%;
 @include utils.blur(#1f1e1e18, blur(2px));
- 
 }
 .icon img {
   width: 40px;
@@ -34,20 +33,18 @@
 }
 
 @media (max-width: 768px) {
+  .nav {
+  width: 100%;
+@include utils.blur(#1f1e1e18, blur(0px));
+}
   .menu {
     position: fixed;
     margin-top: 16em;
   }
   .resumen {
-    margin-top: 17em;
-    padding-left: 1.3em;
-  }
-  h2 {
-    font-size: 1.5em;
-  }
-  .intro {
     display: none;
   }
+  
 }
 @media (max-width: 425px) {
   .fondo {
@@ -60,7 +57,5 @@
   li a {
     font-size: 0.7em;
   }
-  .resumen {
-    display: none;
-  }
+ 
 }
