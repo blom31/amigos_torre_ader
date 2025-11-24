@@ -26,3 +26,12 @@
   color: rgb(21, 79, 46);
   font-weight: 500;
 }
+@media (max-width: 503px) {
+  .eventos {
+    flex-direction: column;
+  }
+  .col-3, .evento{
+width: 90%;
+padding: 0.5em;
+  }
+}
