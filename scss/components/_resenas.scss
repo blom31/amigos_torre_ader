@@ -1,0 +1,61 @@
+@use "../utilities/utilities" as utils;
+
+.reviews-container {
+  @include utils.d_flex(flex, column, center, center, 1em);
+  width: 95%;
+}
+.reviews {
+  @include utils.d_flex(flex, row, space-evenly, center, 0);
+  border-radius: 15px;
+  background-color: #d29f6c51;
+  height: 300px;
+  width: 100%;
+}
+
+.reviews_link {
+  color: rgb(21, 79, 46);
+  margin-top: 8em;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.button_neo {
+  color: #090909;
+  padding: 0.5em 0.5em;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.button_neo:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.review_google {
+  display: none;
+}
+.review-card {
+  width: 230px;
+  height: 250px;
+  margin: 0.3em;
+  overflow-y: scroll;
+  padding: 0.5em;
+  border-color: rgb(81, 83, 83);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+}
+
+@media (max-width: 425px) {
+  .reviews,
+  .more-reviews {
+    display: none;
+  }
+  .review_google {
+    display: block;
+    margin-bottom: 1em;
+  }
+}
