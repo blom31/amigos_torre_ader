@@ -97,6 +97,10 @@ main {
 /*Configuracion general de img*/
 /*Configuración para aplicar neumorfismo*/
 /* From Uiverse.io by adamgiebl */
+body {
+  background-color: rgba(214, 166, 118, 0.5490196078);
+}
+
 a {
   text-decoration: none;
 }
@@ -165,18 +169,16 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .nav {
+    width: 100%;
+    background-color: rgba(31, 30, 30, 0.0941176471);
+    backdrop-filter: blur(0px);
+  }
   .menu {
     position: fixed;
     margin-top: 16em;
   }
   .resumen {
-    margin-top: 17em;
-    padding-left: 1.3em;
-  }
-  h2 {
-    font-size: 1.5em;
-  }
-  .intro {
     display: none;
   }
 }
@@ -190,9 +192,6 @@ h2 {
   }
   li a {
     font-size: 0.7em;
-  }
-  .resumen {
-    display: none;
   }
 }
 .fondo {
@@ -213,131 +212,6 @@ h2 {
   padding: 0em;
   width: 100%;
   margin-bottom: 1em;
-}
-
-.foto_titulo {
-  font-size: 1.8em;
-  font-style: italic;
-  font-weight: 700;
-  letter-spacing: 20px;
-}
-
-.contenedor_fotos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1em;
-  gap: 0;
-  padding: 0;
-  width: 95%;
-  margin-bottom: 1em;
-}
-
-.Carousel {
-  width: 100%;
-  margin: 0px 60px;
-}
-
-.Carousel h2 {
-  font-size: 26px;
-  line-height: 38px;
-  padding-bottom: 24px;
-  opacity: 0.9;
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  text-align: center;
-}
-
-/* images */
-.slick-list {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: fit-content;
-  height: 304px;
-  padding: 10px 0px;
-  margin: 0px auto;
-  max-width: 90vw;
-  overflow: hidden;
-}
-
-.slick-track {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  transition: 0.5s ease-in-out;
-}
-
-.slick {
-  position: relative;
-  width: 275px;
-  padding: 0 18px;
-  float: left;
-  box-sizing: border-box;
-  display: flex;
-  height: 100%;
-}
-
-.slick h4 {
-  position: absolute;
-  z-index: 1;
-  font-size: 22px;
-  line-height: 23px;
-  color: #fff;
-  padding: 15px;
-}
-
-.slick h4 small {
-  font-size: 15px;
-  display: block;
-}
-
-.slick a img {
-  object-fit: cover;
-  height: 300px;
-  width: 100%;
-  border-radius: 4px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
-  transition: 0.3s ease-in-out;
-}
-
-.slick a img:hover {
-  opacity: 0.85;
-}
-
-/* buttons */
-.slick-arrow {
-  border-radius: 30px;
-  background-color: #fff;
-  position: absolute;
-  z-index: 4;
-  width: 48px;
-  height: 48px;
-  text-align: center;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-  border: 0;
-  cursor: pointer;
-}
-
-.slick-arrow:focus {
-  outline: 0;
-}
-
-.slick-arrow svg {
-  width: 12px;
-  height: 100%;
-  color: rgba(0, 0, 0, 0.7);
-}
-
-.slick-prev {
-  left: 0px;
-}
-
-.slick-next {
-  right: 0px;
 }
 
 .reviews-container {
@@ -411,19 +285,10 @@ h2 {
   padding: 0;
 }
 
-@media (max-width: 768px) {
-  .foto_titulo {
-    font-size: 2em;
-  }
-}
 @media (max-width: 425px) {
   .fondo {
     height: 50vh;
     width: 100vw;
-  }
-  .foto_titulo {
-    font-size: 1.5em;
-    letter-spacing: 6px;
   }
   .reviews,
   .more-reviews {
@@ -476,7 +341,7 @@ h2 {
   border-radius: 15px;
   width: 90%;
   margin-bottom: 1em;
-  background-color: rgba(222, 201, 66, 0.5);
+  background-color: rgba(210, 159, 108, 0.4823529412);
 }
 
 .histo_flex {
@@ -511,12 +376,12 @@ h2 {
 }
 
 .btn_histo {
-  background-color: rgba(222, 201, 66, 0.849);
+  background-color: rgba(161, 117, 72, 0.4823529412);
   width: 25px;
   height: 50px;
-  margin: 1.5em;
   opacity: 1;
   margin-top: 10%;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
@@ -524,9 +389,6 @@ h2 {
     flex-direction: column;
     padding: 0;
     margin: 0;
-  }
-  .historia_titulo {
-    font-size: 2em;
   }
   .historia_texto {
     width: 49%;
@@ -547,7 +409,7 @@ h2 {
     margin: 0;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 503px) {
   .historia {
     flex-direction: column;
     padding: 0;
@@ -576,9 +438,155 @@ h2 {
     margin-top: 100%;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .btn_histo {
     margin-top: 135%;
+  }
+}
+.contenedor_fotos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  gap: 0;
+  padding: 0;
+  width: 95%;
+  margin-bottom: 1em;
+}
+
+.foto_titulo {
+  font-size: 1.8em;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 20px;
+}
+
+.Carousel {
+  width: 100%;
+  margin: 0px 60px;
+}
+
+.Carousel h2 {
+  font-size: 26px;
+  line-height: 38px;
+  padding-bottom: 24px;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+/* images */
+.slick-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 304px;
+  padding: 10px 0px;
+  margin: 0px auto;
+  max-width: 90vw;
+  overflow: hidden;
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+}
+
+.slick {
+  position: relative;
+  width: 275px;
+  padding: 0 18px;
+  float: left;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+}
+
+.slick h4 {
+  position: absolute;
+  z-index: 1;
+  font-size: 22px;
+  line-height: 23px;
+  color: #fff;
+  padding: 15px;
+}
+
+.slick h4 small {
+  font-size: 15px;
+  display: block;
+}
+
+.slick img {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.slick a img:hover {
+  opacity: 0.85;
+}
+
+/* buttons */
+.slick-arrow {
+  border-radius: 30px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 4;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  border: 0;
+  cursor: pointer;
+}
+
+.slick-arrow:focus {
+  outline: 0;
+}
+
+.slick-arrow svg {
+  width: 12px;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.slick-prev {
+  left: 0px;
+}
+
+.slick-next {
+  right: 0px;
+}
+
+@media (max-width: 768px) {
+  .foto_titulo {
+    letter-spacing: 15px;
+  }
+}
+@media (max-width: 503px) {
+  .foto_titulo {
+    font-size: 1.5em;
+    letter-spacing: 9px;
+  }
+}
+@media (max-width: 425px) {
+  .foto_titulo {
+    letter-spacing: 4px;
+  }
+}
+@media (max-width: 320px) {
+  .foto_titulo {
+    letter-spacing: 2px;
   }
 }
 

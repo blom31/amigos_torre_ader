@@ -14,7 +14,7 @@
   border-radius: 15px;
   width: 90%;
   margin-bottom: 1em;
-  background-color: rgba(222, 201, 66, 0.5);
+  background-color: #d29f6c7b;
 }
 .histo_flex {
   align-items: center;
@@ -43,21 +43,18 @@
   object-fit: cover;
 }
 .btn_histo {
-  background-color: rgba(222, 201, 66, 0.849);
+  background-color: #a175487b;
   width: 25px;
   height: 50px;
-  margin: 1.5em;
   opacity: 1;
   margin-top: 10%;
+  border-radius: 5px;
 }
 @media (max-width: 768px) {
   .historia {
     flex-direction: column;
     padding: 0;
     margin: 0;
-  }
-  .historia_titulo {
-    font-size: 2em;
   }
 
   .historia_texto {
@@ -79,7 +76,7 @@
     margin: 0;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 503px) {
   .historia {
     flex-direction: column;
     padding: 0;
@@ -92,9 +89,7 @@
     font-size: 1.5em;
     letter-spacing: 10px;
   }
-  // .foto_titulo {
-  //   letter-spacing: 5px;
-  // }
+  
   .historia_texto {
     padding: 0.5em;
     width: initial;
@@ -112,7 +107,7 @@
     margin-top: 100%;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .btn_histo {
     margin-top: 135%;
   }
