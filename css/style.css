@@ -153,7 +153,7 @@ h2 {
 
 .resumen {
   margin-top: 6em;
-  padding-left: 4em;
+  padding-left: 3em;
 }
 
 .title {
@@ -277,6 +277,7 @@ h2 {
 
 .histo_flex {
   align-items: center;
+  width: 100%;
 }
 
 .historia_texto {
